@@ -114,7 +114,17 @@ public class homeController {
 		return "admin";
 	}
 
-	
+	@RequestMapping("/about")
+	public String about()
+	{
+		return "home";
+	}
+
+	@RequestMapping("/contact")
+	public String contact()
+	{
+		return "home";
+	}
 
 	@RequestMapping(path="/403")
 	public String error()
